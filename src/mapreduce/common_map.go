@@ -15,7 +15,7 @@ func doMap(
 	jobName string, // the name of the MapReduce job
 	mapTaskNumber int, // which map task this is
 	inFile string,
-	nReduce int, // the number of reduce task that will be run ("R" in the paper)
+	nReduce int, // the number of reduce tasks that will run ("R" in the paper)
 	mapF func(file string, contents string) []KeyValue,
 ) {
 	c,err := ioutil.ReadFile(inFile)
